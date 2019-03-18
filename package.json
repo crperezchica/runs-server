@@ -1,0 +1,43 @@
+{
+  "name": "runs-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed": "node seed.js",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js",
+    "test": "jest --verbose --detectOpenHandles",
+    "test:watch": "npm run test -- --watch",
+    "lint": "eslint .",
+    "pretest": "npm run lint"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crperezchica/runs-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crperezchica/runs-server/issues"
+  },
+  "dependencies": {
+    "auth0": "^2.15.0",
+    "chance": "^1.0.18",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "jwks-rsa": "^1.4.0",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "jest": "^24.5.0",
+    "supertest": "^4.0.0"
+  },
+  "homepage": "https://github.com/crperezchica/runs-server#readme"
+}
